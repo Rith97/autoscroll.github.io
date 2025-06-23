@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Poster</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif; /* A nice default sans-serif font */
+    }
+    /* Custom scrollbar for better aesthetics */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.6.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-100">
+  <div id="root"></div>
+  <script>
+    // Mock process.env.API_KEY for browser environment if not set by build tool
+    // In a real build, this would be set through environment variables.
+    // For this environment, we'll leave it to be undefined, and the app should handle it.
+    // if (typeof process === 'undefined') {
+    //   window.process = { env: { API_KEY: "YOUR_GEMINI_API_KEY_HERE" } };
+    // } else if (!process.env || !process.env.API_KEY) {
+    //   process.env.API_KEY = "YOUR_GEMINI_API_KEY_HERE";
+    // }
+    // IMPORTANT: The actual API_KEY should be set in the execution environment.
+    // For the purpose of this sandbox, the app will show a message if API_KEY is missing.
+  </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
+    
