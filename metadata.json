@@ -1,0 +1,7 @@
+{
+  "name": "Facebook Post Scheduler",
+  "description": "A React application to schedule and compose Facebook posts, with AI-powered content suggestions. This app simulates Facebook posting and does not actually interact with Facebook APIs.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
